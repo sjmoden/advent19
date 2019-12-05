@@ -4,7 +4,7 @@ using System.Linq;
 using DayThree;
 using NUnit.Framework;
 
-namespace DayThreeTests
+namespace Tests.DayThree
 {
    public class WireComparerTests
     {

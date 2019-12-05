@@ -1,7 +1,7 @@
-using NUnit.Framework;
 using DayOne;
+using NUnit.Framework;
 
-namespace DayOneTests
+namespace Tests.DayOne
 {
     public class ModuleTests
     {

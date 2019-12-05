@@ -1,7 +1,7 @@
 using IntComputer;
 using NUnit.Framework;
 
-namespace DayTwoTests
+namespace Tests.DayTwo
 {
     public class ComputerTests
     {

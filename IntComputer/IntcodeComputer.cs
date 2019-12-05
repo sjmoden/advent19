@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DayTwo
+namespace IntComputer
 {
     public class IntcodeComputer
     {
@@ -8,7 +8,7 @@ namespace DayTwo
         public IntcodeComputer(string memory)
         {
             var memoryArray = memory.Split(',');
-            _memory = Array.ConvertAll<string, int>(memoryArray, int.Parse);
+            _memory = Array.ConvertAll(memoryArray, int.Parse);
         }
 
         public string DisplayCurrentCode => string.Join(',', _memory);
@@ -30,7 +30,7 @@ namespace DayTwo
             switch (instructionCode)
             {
                 case 1:
-                    AddOperation(startingPosition +1, startingPosition + 2, startingPosition +3);
+                    AddOperation(startingPosition + 1, startingPosition + 2, startingPosition + 3);
                     return true;
                 case 2:
                     MultiplyOperation(startingPosition + 1, startingPosition + 2, startingPosition + 3);

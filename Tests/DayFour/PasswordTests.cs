@@ -1,7 +1,7 @@
-using NUnit.Framework;
 using DayFour;
+using NUnit.Framework;
 
-namespace DayFourTests
+namespace Tests.DayFour
 {
     public class Tests
     {

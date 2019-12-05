@@ -1,9 +1,9 @@
 using System.Drawing;
+using System.Linq;
 using DayThree;
 using NUnit.Framework;
-using  System.Linq;
 
-namespace DayThreeTests
+namespace Tests.DayThree
 {
     public class Tests
     {
@@ -17,8 +17,7 @@ namespace DayThreeTests
         {
             var wire = new Wire();
             wire.Move('R', 2);
-            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(3));
-            Assert.That(wire.CoOrdinates.Count(c => c == new Point(0,0)),Is.EqualTo(1));
+            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(2));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(1,0)),Is.EqualTo(1));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(2,0)),Is.EqualTo(1));
         }
@@ -28,8 +27,7 @@ namespace DayThreeTests
         {
             var wire = new Wire();
             wire.Move('L', 2);
-            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(3));
-            Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, 0)), Is.EqualTo(1));
+            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(2));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(-1, 0)), Is.EqualTo(1));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(-2, 0)), Is.EqualTo(1));
         }
@@ -39,8 +37,7 @@ namespace DayThreeTests
         {
             var wire = new Wire();
             wire.Move('U', 2);
-            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(3));
-            Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, 0)), Is.EqualTo(1));
+            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(2));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, 1)), Is.EqualTo(1));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, 2)), Is.EqualTo(1));
         }
@@ -50,8 +47,7 @@ namespace DayThreeTests
         {
             var wire = new Wire();
             wire.Move('D', 2);
-            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(3));
-            Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, 0)), Is.EqualTo(1));
+            Assert.That(wire.CoOrdinates.Count, Is.EqualTo(2));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, -1)), Is.EqualTo(1));
             Assert.That(wire.CoOrdinates.Count(c => c == new Point(0, -2)), Is.EqualTo(1));
         }
